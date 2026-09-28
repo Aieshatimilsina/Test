@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
     <title>Profile</title>
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <img src="Images/logo.png" alt="Logo" width="150" height="150">
+    <div id="logo">
+        <img src="Images/logo.png" alt="Logo" width="150" height="100">
+    </div>
+
+    <div id="navigation">
 
         <nav>
             <ul>
@@ -23,20 +30,26 @@
             </ul>
         </nav>
 
-        <h1>Search</h1>
+        <div id="search">
 
-        <form>
-            <input type="search" placeholder="Search here">
-            <input type="submit" value="Search">
-        </form>
+            <h1>Search</h1>
 
-    </header>
+            <form>
+                <input type="search" placeholder="Search here">
+                <input type="submit" value="Search">
+            </form>
 
+        </div>
+
+    </div>
+
+</header>
+    </div>
 
     <main>
+        <div id="about">
 
-
-            <h2 id="about">About Me</h2>
+            <h2>About Me</h2>
 
             <p>
                 My name is Aiesha. I am a BIT student who is interested in
@@ -46,10 +59,15 @@
 
             <img src="Images/me.jpeg" alt="Me" width="300" height="300">
 
+        </div>
 
-            <h2 id="skills">My Skills</h2>
+
+        <div id="skills">
+
+            <h2>My Skills</h2>
 
             <dl>
+
                 <dt>Programming Language</dt>
                 <dd>Java, Python, C++, JavaScript</dd>
 
@@ -61,10 +79,14 @@
 
                 <dt>Framework</dt>
                 <dd>.NET, Spring Boot, Angular, Django, Flask</dd>
+
             </dl>
 
+        </div>
 
-            <h2 id="projects">My Projects</h2>
+        <div id="projects">
+
+            <h2>My Projects</h2>
 
             <article>
 
@@ -78,9 +100,11 @@
                 </p>
 
             </article>
-            
 
-            <h2 id="education">Education</h2>
+        </div>
+        <div id="education">
+
+            <h2>Education</h2>
 
             <table border="1">
 
@@ -106,16 +130,24 @@
 
             </table>
 
-            <h2 id="contact">Contact Me</h2>
+        </div>
+
+        <div id="contact">
+
+            <h2>Contact Me</h2>
 
             <form>
 
-                <label>Email:</label><br>
+                <label>Email:</label>
+                <br>
+
                 <input type="email" placeholder="Enter your email" required>
 
                 <br><br>
 
-                <label>Message:</label><br>
+                <label>Message:</label>
+                <br>
+
                 <textarea rows="5" cols="40"
                     placeholder="Your message here"></textarea>
 
@@ -125,34 +157,40 @@
 
             </form>
 
-           </main>
+        </div>
 
+    </main>
 
-    <footer>
+    <div id="footer">
 
         <h2>FIND ME ON</h2>
 
-        <a href="mailto:yourmail@gmail.com">
-            <img src="Images/gmail.jpg" alt="Gmail" width="80">
-        </a>
+        <div id="social-media">
 
-        <a href="https://www.facebook.com/aieshatimilsina/">
-            <img src="Images/facebook.jpg" alt="Facebook" width="80">
-        </a>
+            <a href="mailto:yourmail@gmail.com">
+                <img src="Images/gmail.jpg" alt="Gmail" width="80">
+            </a>
 
-        <a href="https://www.linkedin.com/in/aiesha-timilsina-393a6a35b/">
-            <img src="Images/linkedin.png" alt="LinkedIn" width="80">
-        </a>
+            <a href="https://www.facebook.com/aieshatimilsina/">
+                <img src="Images/facebook.jpg" alt="Facebook" width="80">
+            </a>
 
-        <a href="https://wa.me/977XXXXXXXXXX">
-            <img src="Images/whatsapp.webp" alt="WhatsApp" width="80">
-        </a>
+            <a href="https://www.linkedin.com/in/aiesha-timilsina-393a6a35b/">
+                <img src="Images/linkedin.png" alt="LinkedIn" width="80">
+            </a>
+
+            <a href="https://wa.me/977XXXXXXXXXX">
+                <img src="Images/whatsapp.webp" alt="WhatsApp" width="80">
+            </a>
+
+        </div>
 
         <br>
         <br>
+
         <p>&copy; 2026 Aiesha Timilsina</p>
 
-    </footer>
+    </div>
 
 </body>
 

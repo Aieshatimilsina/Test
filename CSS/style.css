@@ -1,0 +1,45 @@
+/* body {
+    background-color: #CCBEB1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+header {
+    background-color: #edd5d9;
+    color: rgb(21, 21, 20);
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 30px;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search h1 {
+    font-size: 20px;
+} */
