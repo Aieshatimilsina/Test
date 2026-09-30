@@ -1,45 +1,111 @@
-/* body {
+body {
     background-color: #CCBEB1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
 }
 
-header {
+/* Header and Footer */
+header,
+#footer {
     background-color: #edd5d9;
-    color: rgb(21, 21, 20);
-    display: flex;
-    align-items: center;
 }
 
-#logo {
-    margin-right: 30px;
+/* Section Boxes */
+#about,
+#skills,
+#projects,
+#education,
+#contact {
+    background-color: #FFF1E8;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #C9AFA5;
 }
 
-#navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+/* Headings */
+#about h2,
+#skills h2,
+#projects h2,
+#education h2,
+#contact h2 {
+    color: #9C5C50;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
+/* Project Cards */
+#projects article {
+    background-color: #FCE5D8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #D6B8AA;
 }
 
-nav a {
-    text-decoration: none;
+/* Buttons */
+#contact button {
+    background-color: #D99AAF;
     color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
 }
 
-#search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* Navigation */
+nav a {
+    color: #333333;
+    text-decoration: none;
 }
 
-#search h1 {
-    font-size: 20px;
-} */
+nav a:hover {
+    color: #A64D70;
+}
+/* Article Styling */
+#about,
+#skills,
+#projects,
+#education,
+#contact {
+    transition: 0.3s;
+}
+
+#about:hover,
+#skills:hover,
+#projects:hover,
+#education:hover,
+#contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px #A8877B;
+    background-color: #FCE5D8;
+
+/* Article Heading */
+#projects article h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #9C5C50;
+}
+
+/* Article Hover */
+#projects article:hover {
+    transform: translateY(-10px);
+}
+
+/* Article Link */
+article a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #9C5C50;
+    text-decoration: none;
+}
+
+/* Link Hover */
+article a:hover {
+    color: #D99AAF;
+}
+
+/* Smooth Hover Effect */
+#projects article {
+    transition: transform 0.3s;
+}
+.about-container{
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
