@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,35 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 
     <title>Profile</title>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
+       <header>
 
+        <!-- Logo -->
         <div id="logo">
             <img src="Images/logo.png" alt="Logo" width="100" height="70">
         </div>
 
         <!-- Search -->
         <div id="search">
-
             <h1>Search</h1>
 
             <form>
                 <input type="search" placeholder="Search here">
                 <input type="submit" value="Search">
             </form>
-
         </div>
 
         <!-- Navigation -->
         <div id="navigation">
-
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -44,10 +40,10 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
-
         </div>
 
     </header>
+
 
     <!-- Main Content -->
     <main>
@@ -55,7 +51,7 @@
         <!-- About Me -->
         <div id="about">
 
-            <div class="about container">
+            <div class="about">
 
                 <div>
                     <h2>About Me</h2>
@@ -67,34 +63,44 @@
                     </p>
                 </div>
 
-                <img src="Images/me.jpeg" alt="Me" width="200" height="220">
+                <img src="Images/me.jpeg" alt="My Photo" width="200" height="220">
 
             </div>
 
         </div>
+
 
         <!-- Skills -->
         <div id="skills">
 
             <h2>My Skills</h2>
 
-            <dl>
+            <div class="skills-container">
 
-                <dt>Programming Language</dt>
-                <dd>Java, Python, C++, JavaScript</dd>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Java, Python, C++, JavaScript</p>
+                </div>
 
-                <dt>Database</dt>
-                <dd>MySQL, MongoDB, Oracle, PostgreSQL</dd>
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <p>MySQL, MongoDB, Oracle, PostgreSQL</p>
+                </div>
 
-                <dt>Tools</dt>
-                <dd>MS Word, PowerPoint, Excel, Visual Studio Code, IntelliJ</dd>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>MS Word, PowerPoint, Excel, VS Code, IntelliJ</p>
+                </div>
 
-                <dt>Framework</dt>
-                <dd>.NET, Spring Boot, Angular, Django, Flask</dd>
+                <div class="skill-card">
+                    <h3>Frameworks</h3>
+                    <p>.NET, Spring Boot, Angular, Django, Flask</p>
+                </div>
 
-            </dl>
+            </div>
 
         </div>
+
 
         <!-- Projects -->
         <div id="projects">
@@ -110,28 +116,30 @@
                     explore movies and create their own cinema experience.
                     This project helped me improve my programming and web
                     development skills.
-
-                     
-        <h3>Aivora - Business Website</h3>
-
-        <p>
-            I developed Aivora, a business website that showcases
-            products and provides a user-friendly browsing experience.
-            This project helped me improve my skills in HTML, CSS,
-            and web development.
-        </p>
-
-        <a href="https://github.com/Aieshatimilsina/Aivora_Web"
-           target="_blank">
-            View GitHub Repository
-        </a>
-
-    </article>
                 </p>
 
             </article>
 
+            <article>
+
+                <h3>Aivora - Business Website</h3>
+
+                <p>
+                    I developed Aivora, a business website that showcases
+                    products and provides a user-friendly browsing experience.
+                    This project helped me improve my skills in HTML, CSS,
+                    and web development.
+                </p>
+
+                <a href="https://github.com/Aieshatimilsina/Aivora_Web"
+                   target="_blank">
+                    View GitHub Repository
+                </a>
+
+            </article>
+
         </div>
+
 
         <!-- Education -->
         <div id="education">
@@ -164,6 +172,7 @@
 
         </div>
 
+
         <!-- Contact -->
         <div id="contact">
 
@@ -174,15 +183,18 @@
                 <label>Email:</label>
                 <br>
 
-                <input type="email" placeholder="Enter your email" required>
+                <input type="email"
+                       placeholder="Enter your email"
+                       required>
 
                 <br><br>
 
                 <label>Message:</label>
                 <br>
 
-                <textarea rows="5" cols="40"
-                    placeholder="Your message here"></textarea>
+                <textarea rows="5"
+                          cols="40"
+                          placeholder="Your message here"></textarea>
 
                 <br><br>
 
@@ -194,6 +206,7 @@
 
     </main>
 
+
     <!-- Footer -->
     <div id="footer">
 
@@ -202,19 +215,19 @@
         <div id="social-media">
 
             <a href="mailto:yourmail@gmail.com">
-                <img src="../Images/gmail.jpg" alt="Gmail" width="80">
+                <img src="/Images/gmail.jpg" alt="Gmail" width="80">
             </a>
 
             <a href="https://www.facebook.com/aieshatimilsina/">
-                <img src="../Images/facebook.jpg" alt="Facebook" width="80">
+                <img src="/Images/facebook.jpg" alt="Facebook" width="80">
             </a>
 
             <a href="https://www.linkedin.com/in/aiesha-timilsina-393a6a35b/">
-                <img src="../Images/linkedin.png" alt="LinkedIn" width="80">
+                <img src="/Images/linkedin.png" alt="LinkedIn" width="80">
             </a>
 
             <a href="https://wa.me/977XXXXXXXXXX">
-                <img src="../Images/whatsapp.webp" alt="WhatsApp" width="80">
+                <img src="/Images/whatsapp.webp" alt="WhatsApp" width="80">
             </a>
 
         </div>
