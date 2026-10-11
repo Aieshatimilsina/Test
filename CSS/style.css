@@ -110,12 +110,119 @@ nav a:hover {
 
 .about p {
     max-width: 700px;
+    line-height: 1.8;
 }
 
-.about img {
+
+/* About Me Image Slider */
+
+#about .slider {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    margin: auto;
+    overflow: hidden;
     border-radius: 15px;
+    cursor: pointer;
     box-shadow: 0 4px 10px #C9AFA5;
 }
+
+#about .slider-tracker {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+#about .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#about .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+/* Slider Buttons */
+
+#about .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#about .slider-btn.prev {
+    left: 10px;
+}
+
+#about .slider-btn.next {
+    right: 10px;
+}
+
+
+/* Slider Dots */
+
+#about .dots-container {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    z-index: 5;
+}
+
+#about .dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    padding: 0;
+    border: 1px solid #9C5C50;
+    border-radius: 50%;
+    background-color: #CCBEB1;
+    cursor: pointer;
+}
+
+#about .dot.active {
+    background-color: #9C5C50;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .slider {
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
 
 #skills {
     text-align: center;
@@ -169,6 +276,7 @@ nav a:hover {
     line-height: 1.5;
 }
 
+
 #projects article {
     background-color: #FCE5D8;
     padding: 20px;
@@ -203,6 +311,7 @@ article a:hover {
     color: #D99AAF;
 }
 
+
 #education table {
     width: 100%;
     border-collapse: collapse;
@@ -224,6 +333,7 @@ article a:hover {
 #education tr:hover td {
     background-color: #EDD5D9;
 }
+
 
 #contact form {
     max-width: 600px;
@@ -264,6 +374,7 @@ article a:hover {
     background-color: #C47F97;
 }
 
+
 #footer {
     background-color: #EDD5D9;
     text-align: center;
@@ -293,6 +404,9 @@ article a:hover {
 #social-media img:hover {
     transform: translateY(-8px) scale(1.08);
 }
+
+
+/* Responsive Design */
 
 @media (max-width: 768px) {
     header {

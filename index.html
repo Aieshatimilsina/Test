@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +12,8 @@
 
 <body>
 
-       <header>
+    <!-- Header -->
+    <header>
 
         <!-- Logo -->
         <div id="logo">
@@ -50,7 +54,8 @@
 
             <div class="about">
 
-                <div>
+                <!-- About Me Text -->
+                <div class="about-text">
                     <h2>About Me</h2>
 
                     <p>
@@ -60,7 +65,44 @@
                     </p>
                 </div>
 
-                <img src="Images/me.jpeg" alt="My Photo" width="200" height="220">
+                <!-- About Me Image Slider -->
+                <div class="slider">
+
+                    <div class="slider-tracker">
+
+                        <div class="slide">
+                            <img src="Images/me.jpeg" alt="My Photo 1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="Images/me 2.jpeg" alt="My Photo 2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="Images/me 3.jpeg" alt="My Photo 3">
+                        </div>
+
+                        <div class="slide">
+                            <img src="Images/me 4.jpeg" alt="My Photo 4">
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn prev"
+                            type="button"
+                            aria-label="Previous photo">
+                        &#10094;
+                    </button>
+
+                    <button class="slider-btn next"
+                            type="button"
+                            aria-label="Next photo">
+                        &#10095;
+                    </button>
+
+                    <div class="dots-container"></div>
+
+                </div>
 
             </div>
 
@@ -129,7 +171,8 @@
                 </p>
 
                 <a href="https://github.com/Aieshatimilsina/Aivora_Web"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     View GitHub Repository
                 </a>
 
@@ -205,33 +248,43 @@
 
 
     <!-- Footer -->
-<div id="footer">
+    <div id="footer">
 
-    <h2>FIND ME ON</h2>
+        <h2>FIND ME ON</h2>
 
-    <div id="social-media">
+        <div id="social-media">
 
-        <a href="mailto:yourmail@gmail.com">
-            <img src="Images/gmail.jpg" alt="Gmail" width="80">
-        </a>
+            <a href="mailto:yourmail@gmail.com">
+                <img src="Images/gmail.jpg" alt="Gmail" width="80">
+            </a>
 
-        <a href="https://www.facebook.com/aieshatimilsina/">
-            <img src="Images/facebook.jpg" alt="Facebook" width="80">
-        </a>
+            <a href="https://www.facebook.com/aieshatimilsina/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="Images/facebook.jpg" alt="Facebook" width="80">
+            </a>
 
-        <a href="https://www.linkedin.com/in/aiesha-timilsina-393a6a35b/">
-            <img src="Images/linkedin.png" alt="LinkedIn" width="80">
-        </a>
+            <a href="https://www.linkedin.com/in/aiesha-timilsina-393a6a35b/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="Images/linkedin.png" alt="LinkedIn" width="80">
+            </a>
 
-        <a href="https://wa.me/977XXXXXXXXXX">
-            <img src="Images/whatsapp.webp" alt="WhatsApp" width="80">
-        </a>
+            <a href="https://wa.me/977XXXXXXXXXX">
+                <img src="Images/whatsapp.webp" alt="WhatsApp" width="80">
+            </a>
+
+        </div>
+
+        <br><br>
+
+        <p>&copy; 2026 Aiesha Timilsina</p>
 
     </div>
 
-    <br><br>
 
-    <p>&copy; 2026 Aiesha Timilsina</p>
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
 
-</div>
+</body>
 </html>
